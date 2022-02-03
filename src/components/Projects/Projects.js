@@ -12,8 +12,8 @@ import {
   TitleContent,
   UtilityList,
   Img,
-  text_description,
 } from "./ProjectsStyles";
+
 import {
   Section,
   SectionDivider,
