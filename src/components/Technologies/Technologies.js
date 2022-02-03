@@ -1,5 +1,6 @@
 import React from "react";
 import { DiFirebase, DiReact, DiZend } from "react-icons/di";
+import { AiFillSliders } from "react-icons/ai";
 import {
   Section,
   SectionDivider,
@@ -23,23 +24,23 @@ const Technologies = () => (
       From Back-end To Design.
     </SectionText>
     <List>
-      <ListItem>
-        <DiFirebase size="3rem" />
-        <ListContainer>
-          <ListTitle>Front-End</ListTitle>
-          <ListParagraph>
-            Experience with <br />
-            React.Js
-          </ListParagraph>
-        </ListContainer>
-      </ListItem>
       <ListContainer>
         <ListItem>
           <DiReact size="3rem" />
+          <ListTitle>Front-End</ListTitle>
+          <ListParagraph>
+            Experience with <br />
+            React.Js + Next.js, Javascript, Html, Css & Sass
+          </ListParagraph>
+        </ListItem>
+      </ListContainer>
+      <ListContainer>
+        <ListItem>
+          <DiFirebase size="3rem" />
           <ListTitle>Backend-End</ListTitle>
           <ListParagraph>
             Experience with <br />
-            Node Databases
+            Node Databases, Express, Serverless, Api
           </ListParagraph>
         </ListItem>
       </ListContainer>
@@ -49,7 +50,17 @@ const Technologies = () => (
           <ListTitle>UX/UI</ListTitle>
           <ListParagraph>
             Experience with <br />
-            tools like Figma & AdobeXD
+            tools like Figma & AdobeXD, Photoshop and Illustrator
+          </ListParagraph>
+        </ListItem>
+      </ListContainer>
+      <ListContainer>
+        <ListItem>
+          <AiFillSliders size="3rem" />
+          <ListTitle>Abilities</ListTitle>
+          <ListParagraph>
+            Team Player <br />
+            tools like Figma & AdobeXD, Photoshop and Illustrator
           </ListParagraph>
         </ListItem>
       </ListContainer>

@@ -25,9 +25,9 @@ const Timeline = () => {
   const [activeItem, setActiveItem] = useState(0);
   const carouselRef = useRef();
 
-  // const scroll = (node, left) => {
-  //   return node.scrollTo({ left, behavior: 'smooth' });
-  // }
+  const scroll = (node, left) => {
+    return node.scrollTo({ left, behavior: "smooth" });
+  };
 
   const handleClick = (e, i) => {
     e.preventDefault();
@@ -53,15 +53,15 @@ const Timeline = () => {
     }
   };
 
-  // // snap back to beginning of scroll when window is resized
-  // // avoids a bug where content is covered up if coming from smaller screen
-  // useEffect(() => {
-  //   const handleResize = () => {
-  //     scroll(carouselRef.current, 0);
-  //   }
+  // snap back to beginning of scroll when window is resized
+  // avoids a bug where content is covered up if coming from smaller screen
+  useEffect(() => {
+    const handleResize = () => {
+      scroll(carouselRef.current, 0);
+    };
 
-  //   window.addEventListener('resize', handleResize);
-  // }, []);
+    window.addEventListener("resize", handleResize);
+  }, []);
 
   return (
     <Section id="about">
@@ -70,7 +70,7 @@ const Timeline = () => {
         The purpose of this project is to aspire myself to be a better developer
         for front end and understand UX/UI with the front-end tools.
       </SectionText>
-      <CarouselContainer ref={carouselRef}>
+      <CarouselContainer ref={carouselRef} onScroll={handleScroll}>
         <>
           {TimeLineData.map((item, index) => (
             <CarouselMobileScrollNode
