@@ -38,7 +38,7 @@ const Projects = () => (
             <div>
               <TitleContent>
                 <TagList>
-                  Stack
+                  STACK
                   {tags.map((tag, i) => (
                     <Tag key={i}>{tag}</Tag>
                   ))}
