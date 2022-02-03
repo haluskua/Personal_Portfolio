@@ -12,6 +12,7 @@ import {
   TitleContent,
   UtilityList,
   Img,
+  text_description,
 } from "./ProjectsStyles";
 import {
   Section,
@@ -25,9 +26,32 @@ const Projects = () => (
     <SectionDivider />
     <SectionTitle main>Projects</SectionTitle>
     <GridContainer>
-      {projects.map((project) => (
-        <div>{project.title}</div>
-      ))}
+      {projects.map(
+        ({ id, image, title, description, tags, source, visit }) => (
+          <BlogCard key={id}>
+            <Img src={image}></Img>
+            <TitleContent>
+              <HeaderThree title>{title}</HeaderThree>
+              <Hr />
+            </TitleContent>
+            <CardInfo>{description}</CardInfo>
+            <div>
+              <TitleContent>
+                <TagList>
+                  Stack
+                  {tags.map((tag, i) => (
+                    <Tag key={i}>{tag}</Tag>
+                  ))}
+                </TagList>
+                <UtilityList>
+                  <ExternalLinks href={visit}>Code</ExternalLinks>
+                  <ExternalLinks href={source}>Source</ExternalLinks>
+                </UtilityList>
+              </TitleContent>
+            </div>
+          </BlogCard>
+        )
+      )}
     </GridContainer>
   </Section>
 );
