@@ -37,7 +37,12 @@ export const Div2 = styled.div`
   display: flex;
   justify-content: space-around;
   @media ${(props) => props.theme.breakpoints.sm} {
-    grid-area: 2 / 2 / 3 / 5;
+    grid-area: 2 / 1/ 2 / 6;
+    align-items: center;
+    justify-content: center;
+  }
+  li {
+    width: 100%;
   }
 `;
 export const Div3 = styled.div`
