@@ -5,7 +5,9 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build && next export",
-    "start": "next start"
+    "start": "next start",
+    "build-static": "next build && next export && npm run build-static-repair-index",
+    "build-static-repair-index": "replace-in-files --string \"/_next/static\" --replacement \"./_next/static\" out/index.html"
   },
   "dependencies": {
     "next": "10.2.3",
