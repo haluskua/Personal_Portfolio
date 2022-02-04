@@ -6,6 +6,7 @@ import {
   ExternalLinks,
   GridContainer,
   HeaderThree,
+  HeaderFour,
   Hr,
   Tag,
   TagList,
@@ -38,7 +39,7 @@ const Projects = () => (
             <div>
               <TitleContent>
                 <TagList>
-                  STACK
+                  <HeaderFour title>STACK</HeaderFour>
                   {tags.map((tag, i) => (
                     <Tag key={i}>{tag}</Tag>
                   ))}

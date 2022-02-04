@@ -16,7 +16,7 @@ const data = [
   { number: 2, text: "Years of Fullstack" },
   {
     number: 17,
-    text: "Years as a Single-father to my son who is turning 18 this year",
+    text: "Years as a Single-father to my son",
   },
   {
     number: 2007,

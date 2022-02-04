@@ -44,6 +44,14 @@ export const HeaderThree = styled.h3`
   padding: 0.5rem 0;
   font-size: ${(props) => (props.title ? "3rem" : "2rem")};
 `;
+export const HeaderFour = styled.h5`
+  font-weight: 600;
+  letter-spacing: 1.2px;
+  font-style: italic;
+  color: #9cc9e3;
+  padding: 0.1rem 0;
+  font-size: ${(props) => (props.title ? "1.5rem" : "0.5rem")};
+`;
 
 export const Hr = styled.hr`
   width: 50px;

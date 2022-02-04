@@ -6,7 +6,12 @@ export const BcgArtSection = styled.div`
   height: auto;
   z-index: -1;
   bottom: 4%;
-  right: 9%;
+  right: 2%;
+  @media ${(props) => props.theme.breakpoints.sm} {
+    height: 183px;
+    top: -6%;
+    left: -63%;
+  }
 `;
 export const Img = styled.img`
   width: 100%;
@@ -14,6 +19,12 @@ export const Img = styled.img`
   object-fit: contain;
   overflow: hidden;
   opacity: 0.35;
+  @media ${(props) => props.theme.breakpoints.sm} {
+    height: 280px;
+  }
+  @media ${(props) => props.theme.breakpoints.md} {
+    height: 200px;
+  }
 `;
 
 export const Caption = styled.p`
