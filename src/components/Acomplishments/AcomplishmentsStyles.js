@@ -52,7 +52,7 @@ export const BoxNum = styled.h5`
   font-size: 36px;
   line-height: 40px;
   letter-spacing: 0.01em;
-  color: #ffffff;
+  color: #73b8d3;
   margin-bottom: 8px;
 
   @media ${(props) => props.theme.breakpoints.md} {

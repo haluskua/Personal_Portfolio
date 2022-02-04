@@ -6,11 +6,13 @@ import {
   SectionTitle,
 } from "../../styles/GlobalComponents";
 import Button from "../../styles/GlobalComponents/Button";
+import BcgArt from "../BcgArt/BcgArt";
 import { LeftSection } from "./HeroStyles";
 
 const Hero = () => (
   <Section row nopadding>
     <LeftSection>
+      <BcgArt />
       <SectionTitle main center>
         Welcome To <br />
         My Personal Portfolio
