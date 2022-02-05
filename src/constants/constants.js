@@ -1,9 +1,9 @@
 export const projects = [
   {
-    title: "MERN Memories",
+    title: "Wordpress",
     description:
-      "Using React, Node.js, Express & MongoDB you'll learn how to build a Full Stack MERN Application - from start to finish. The App is called Memories and it is a simple social media app that allows users to post interesting events that happened in their lives.",
-    image: "/images/1.png",
+      "I have built more than a handful of Wordpress sites for clients over during my freelance era and have implemented online payments and email marketing as well as SEO with google search.",
+    image: "/images/Wordpress.png",
     tags: ["Mongo", "Express", "React", "Node"],
     source: "https://google.com",
     visit: "https://google.com",
