@@ -23,7 +23,7 @@ export const GridContainer = styled.section`
 `;
 export const BlogCard = styled.div`
   border-radius: 10px;
-  box-shadow: 3px 3px 20px rgba(80, 78, 78, 0.5);
+  box-shadow: 3px 3px 20px rgb(14 16 16);
   text-align: center;
   width: 400px;
   background: rgb(17 32 44 / 72%);
@@ -57,7 +57,8 @@ export const Hr = styled.hr`
   height: 3px;
   margin: 20px auto;
   border: 0;
-  background: #d0bb57;
+  /* background: #d0bb57; */
+  background: linear-gradient(270deg, #f46737 0%, #945dd6 100%);
 `;
 
 export const Intro = styled.div`

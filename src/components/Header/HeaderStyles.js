@@ -29,8 +29,13 @@ export const Div1 = styled.div`
 `;
 
 export const Span = styled.span`
-  font-size: 2rem;
+  font-size: 2.3rem;
+  font-weight: bold;
   color: #00dbd8;
+  background: linear-gradient(89.97deg, #816500bf 1.84%, #91cbff 102.67%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 `;
 export const Div2 = styled.div`
   grid-area: 1 / 2 / 2 / 4;

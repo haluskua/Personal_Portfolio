@@ -1,7 +1,6 @@
 import React from "react";
 
 import {
-  BlogCard,
   CardInfo,
   ExternalLinks,
   GridContainer,
@@ -19,6 +18,7 @@ import {
   Section,
   SectionDivider,
   SectionTitle,
+  BlogCard,
 } from "../../styles/GlobalComponents";
 import { projects } from "../../constants/constants";
 
@@ -34,8 +34,8 @@ const Projects = () => (
             <TitleContent>
               <HeaderThree title>{title}</HeaderThree>
               <HeaderFour title>{year}</HeaderFour>
-              <Hr />
             </TitleContent>
+            <Hr />
             <CardInfo>{description}</CardInfo>
             <div>
               <TitleContent>

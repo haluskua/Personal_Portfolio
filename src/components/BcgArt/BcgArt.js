@@ -5,10 +5,10 @@ import { bopImgs } from "./bcgConstant";
 
 const BcgArt = () => (
   <Section nopadding id="projects">
-    {bopImgs.map(({ image, description, id }) => (
+    {bopImgs.map(({ image, id }) => (
       <BcgArtSection key={id}>
         <Img src={image}></Img>
-        <Caption>{description}</Caption>
+        {/* <Caption>{description}</Caption> */}
       </BcgArtSection>
     ))}
   </Section>

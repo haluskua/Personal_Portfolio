@@ -24,6 +24,34 @@ export const Section = styled.section`
   }
 `;
 
+export const BlogCard = styled.div`
+  border-radius: 10px;
+  box-shadow: 3px 3px 20px rgb(14 16 16);
+  text-align: center;
+  width: 400px;
+  //background
+  background: -moz-radial-gradient(circle at 3% 25%, #233e37 0%, #0a140f 52%);
+
+  /* safari 5.1+,chrome 10+ */
+  background: -webkit-radial-gradient(
+    circle at 3% 25%,
+    #233e37 0%,
+    #0a140f 52%
+  );
+
+  /* opera 11.10+ */
+  background: -o-radial-gradient(circle at 3% 25%, #3a225f 0%, #0f1624 52%);
+
+  /* ie 10+ */
+  background: -ms-radial-gradient(circle at 3% 25%, #3a225f 0%, #0f1624 52%);
+
+  /* global 92%+ browsers support */
+  background: radial-gradient(circle at 3% 25%, #3a225f 0%, #0f1624 52%);
+  @media ${(props) => props.theme.breakpoints.sm} {
+    width: 100%;
+  }
+`;
+
 export const SectionTitle = styled.h2`
   font-weight: 800;
   font-size: ${(props) => (props.main ? "65px" : "56px")};
