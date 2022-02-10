@@ -18,7 +18,7 @@ const Hero = () => (
         My Personal Portfolio
       </SectionTitle>
       <SectionText>
-        The purpose of this Website is to aspire and establish myself as a
+        The purpose of this portfolio is to credit my constant pursuit as a
         fullstack developer/UX & UI designer.
       </SectionText>
       <Button onClick={() => (window.location = "https://google.com")}>

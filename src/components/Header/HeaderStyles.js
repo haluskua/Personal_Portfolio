@@ -32,7 +32,7 @@ export const Span = styled.span`
   font-size: 2.3rem;
   font-weight: bold;
   color: #00dbd8;
-  background: linear-gradient(89.97deg, #816500bf 1.84%, #91cbff 102.67%);
+  background: linear-gradient(89.97deg, #00dbd8 1.84%, #91cbff 54.67%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;

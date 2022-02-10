@@ -94,6 +94,10 @@ export const SectionText = styled.p`
   padding-bottom: 3.6rem;
   /* color: rgba(255, 255, 255, 0.5); */
   color: rgb(92 127 135);
+  background: linear-gradient(89.97deg, #00dbd8 1.84%, #91cbff 54.67%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 
   @media ${(props) => props.theme.breakpoints.md} {
     max-width: 670px;
