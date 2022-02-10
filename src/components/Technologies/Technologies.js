@@ -26,7 +26,7 @@ const Technologies = () => (
     <List>
       <ListContainer>
         <ListItem>
-          <DiReact size="3rem" color="wheat" />
+          <DiReact size="3rem" color="#d7dfef" />
           <ListTitle>Front-End</ListTitle>
           <ListParagraph>
             Experience with <br />
@@ -36,7 +36,7 @@ const Technologies = () => (
       </ListContainer>
       <ListContainer>
         <ListItem>
-          <DiFirebase size="3rem" color="wheat" />
+          <DiFirebase size="3rem" color="#d7dfef" />
           <ListTitle>Backend-End</ListTitle>
           <ListParagraph>
             Experience with <br />
@@ -46,7 +46,7 @@ const Technologies = () => (
       </ListContainer>
       <ListContainer>
         <ListItem>
-          <DiZend size="3rem" color="wheat" />
+          <DiZend size="3rem" color="#d7dfef" />
           <ListTitle>UX/UI</ListTitle>
           <ListParagraph>
             Experience with <br />
@@ -56,7 +56,7 @@ const Technologies = () => (
       </ListContainer>
       <ListContainer>
         <ListItem>
-          <AiFillSliders size="3rem" color="wheat" />
+          <AiFillSliders size="3rem" color="#d7dfef" />
           <ListTitle>Abilities</ListTitle>
           <ListParagraph>
             Team Player <br />

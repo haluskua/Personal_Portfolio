@@ -1,10 +1,11 @@
 export const projects = [
   {
-    title: "Wordpress",
+    title: "Finance Service Wordpress site",
     description:
-      "I have built more than a handful of Wordpress sites for clients over during my freelance era and have implemented online payments and email marketing as well as SEO with google search.",
+      "I have built more than a handful of Wordpress sites for clients during my freelance career. I have implemented online payments and email and facebook marketing as well as SEO with google search console.",
     image: "/images/Wordpress.png",
-    tags: ["Mongo", "Express", "React", "Node"],
+    year: "2019",
+    tags: ["Wordpress", "Elementor", "SiteGround"],
     source: "https://google.com",
     visit: "https://google.com",
     id: 0,
@@ -14,6 +15,7 @@ export const projects = [
     description:
       "While building it you're going to learn many advanced React & JavaScript topics, as well as how to use Stripe for card transactions. On top of that, at the end of the video, you will have this unique and complex webshop app that you will be able to add to your portfolio. And trust me, e-commerce applications are impressive.",
     image: "/images/2.png",
+    year: "2019",
     tags: ["React", "JavaScript"],
     source: "https://google.com",
     visit: "https://google.com",
@@ -24,6 +26,7 @@ export const projects = [
     description:
       "This is a code repository for the corresponding YouTube video. In this tutorial, we're going to build and deploy a React Video Chat Application using WebRTC.",
     image: "/images/3.jpg",
+    year: "2019",
     tags: ["React", "WebRTC"],
     source: "https://google.com",
     visit: "https://google.com",
@@ -34,6 +37,7 @@ export const projects = [
     description:
       "This is a code repository for the corresponding video tutorial. In this video, we will create a full Realtime Chat Application",
     image: "/images/4.jpg",
+    year: "2019",
     tags: ["React", "ChatEngine", "Firebase"],
     source: "https://google.com",
     visit: "https://google.com",
@@ -43,8 +47,8 @@ export const projects = [
 
 export const TimeLineData = [
   { year: 2017, text: "Started my journey" },
-  { year: 2018, text: "Worked as a freelance developer" },
-  { year: 2019, text: "Founded JavaScript Mastery" },
-  { year: 2020, text: "Shared my projects with the world" },
-  { year: 2021, text: "Started my own platform" },
+  { year: 2018, text: "Worked as a freelance Graphics and Web designer" },
+  { year: 2019, text: "Certified React Fullstack Developer" },
+  { year: 2020, text: "Freelance Web developer" },
+  { year: 2021, text: "Freelance Web Developer" },
 ];

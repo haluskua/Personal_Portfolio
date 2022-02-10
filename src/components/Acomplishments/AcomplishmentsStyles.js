@@ -39,7 +39,7 @@ export const Box = styled.div`
 
   @media ${(props) => props.theme.breakpoints.sm} {
     height: 110px;
-    padding: 12px;
+    padding: 10px;
 
     &:nth-child(2n) {
       grid-row: 2;
@@ -79,8 +79,8 @@ export const BoxText = styled.p`
   }
 
   @media ${(props) => props.theme.breakpoints.sm} {
-    font-size: 10px;
-    line-height: 14px;
+    font-size: 12px;
+    line-height: 16px;
   }
 `;
 

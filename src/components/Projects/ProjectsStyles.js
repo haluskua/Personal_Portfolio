@@ -77,7 +77,7 @@ export const CardInfo = styled.p`
   color: #e4e6e7;
   font-style: 2rem;
   line-height: 24px;
-  text-align: justify;
+  text-align: left;
   text-shadow: -1px -1px 3px rgba(76, 76, 76, 1);
 
   @media ${(props) => props.theme.breakpoints.sm} {
@@ -97,7 +97,7 @@ export const ExternalLinks = styled.a`
   color: #d4c0c0;
   font-size: 1.6rem;
   padding: 1rem 1.5rem;
-  background: #6b3030;
+  background: #2a3c40;
   border-radius: 15px;
   transition: 0.5s;
   &:hover {
@@ -113,4 +113,5 @@ export const TagList = styled.ul`
 export const Tag = styled.li`
   color: #d8bfbf;
   font-size: 1.5rem;
+  border-bottom: 1px dotted gray;
 `;
