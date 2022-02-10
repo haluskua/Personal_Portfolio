@@ -50,7 +50,7 @@ const Technologies = () => (
           <ListTitle>UX/UI</ListTitle>
           <ListParagraph>
             Experience with <br />
-            tools like Figma & AdobeXD, Photoshop and Illustrator
+            Figma & AdobeXD, Photoshop and Illustrator
           </ListParagraph>
         </ListItem>
       </ListContainer>

@@ -30,7 +30,7 @@ export const Div1 = styled.div`
 
 export const Span = styled.span`
   font-size: 2rem;
-  color: orange;
+  color: #00dbd8;
 `;
 export const Div2 = styled.div`
   grid-area: 1 / 2 / 2 / 4;

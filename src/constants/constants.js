@@ -1,13 +1,13 @@
 export const projects = [
   {
-    title: "Finance Service Wordpress site",
+    title: "Financial Services",
     description:
-      "I have built more than a handful of Wordpress sites for clients during my freelance career. I have implemented online payments and email and facebook marketing as well as SEO with google search console.",
+      "Client business website. UX/UI design and built with Wordpress. I also assisted with email and facebook marketing as well as SEO implementation on google search console.  ",
     image: "/images/Wordpress.png",
-    year: "2019",
-    tags: ["Wordpress", "Elementor", "SiteGround"],
+    year: "2018",
+    tags: ["Wordpress", "Elementor"],
     source: "https://google.com",
-    visit: "https://google.com",
+    visit: "https://pecxer.co.nz",
     id: 0,
   },
   {

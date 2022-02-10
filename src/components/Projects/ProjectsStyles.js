@@ -39,7 +39,6 @@ export const TitleContent = styled.div`
 
 export const HeaderThree = styled.h3`
   font-weight: 500;
-  letter-spacing: 2px;
   color: #9cc9e3;
   padding: 0.5rem 0;
   font-size: ${(props) => (props.title ? "3rem" : "2rem")};
@@ -109,6 +108,11 @@ export const TagList = styled.ul`
   display: flex;
   justify-content: space-around;
   padding: 2rem;
+
+  @media ${(props) => props.theme.breakpoints.sm} {
+    flex-wrap: wrap;
+    width: 90%;
+  }
 `;
 export const Tag = styled.li`
   color: #d8bfbf;
