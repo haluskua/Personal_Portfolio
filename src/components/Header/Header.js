@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { motion } from "framer-motion";
 import React from "react";
 import { AiFillGithub, AiFillInstagram, AiFillLinkedin } from "react-icons/ai";
 import { DiCssdeck } from "react-icons/di";
@@ -16,31 +17,69 @@ import {
 const Header = () => (
   <Container>
     <Div1>
-      <Link href="/">
-        <a
-          style={{
-            display: "flex",
-            alignItems: "center",
-            color: "white",
-            marginBottom: "20px",
-          }}
-        >
-          <DiCssdeck size="4rem" fill="#00DBD8 " /> <Span>Portfolio</Span>
-        </a>
-      </Link>
+      <motion.div
+        whileHover={{
+          position: "relative",
+          scale: 1.1,
+          transition: {
+            duration: 0.2,
+          },
+        }}
+      >
+        <Link href="/">
+          <a
+            style={{
+              display: "flex",
+              alignItems: "center",
+              color: "white",
+              marginBottom: "20px",
+            }}
+          >
+            <DiCssdeck size="4rem" fill="#00DBD8 " /> <Span>Portfolio</Span>
+          </a>
+        </Link>
+      </motion.div>
     </Div1>
     <Div2>
-      <li>
+      <motion.div
+        whileHover={{
+          position: "relative",
+          scale: 1.1,
+          transition: {
+            duration: 0.2,
+          },
+        }}
+      >
         <Link href="#projects">
           <NavLink> Projects</NavLink>
         </Link>
+      </motion.div>
+      <motion.div
+        whileHover={{
+          position: "relative",
+          scale: 1.1,
+          transition: {
+            duration: 0.2,
+          },
+        }}
+      >
         <Link href="#tech">
           <NavLink> Technologies</NavLink>
         </Link>
+      </motion.div>
+      <motion.div
+        whileHover={{
+          position: "relative",
+          scale: 1.1,
+          transition: {
+            duration: 0.2,
+          },
+        }}
+      >
         <Link href="#about">
           <NavLink> About</NavLink>
         </Link>
-      </li>
+      </motion.div>
     </Div2>
     <Div3>
       <SocialIcons href="https://github.com">
