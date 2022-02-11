@@ -8,7 +8,7 @@ import {
 import Button from "../../styles/GlobalComponents/Button";
 import BcgArt from "../BcgArt/BcgArt";
 import { LeftSection } from "./HeroStyles";
-
+import NameAnimation from "../NameAnimate/NameAnimate";
 const Hero = () => (
   <Section row nopadding>
     <LeftSection>
@@ -33,6 +33,7 @@ const Hero = () => (
         <SectionTitle main center>
           Welcome To <br />
           My Personal Portfolio
+          <NameAnimation />
         </SectionTitle>
       </motion.div>
       <SectionText>

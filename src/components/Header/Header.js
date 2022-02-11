@@ -2,7 +2,8 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import React from "react";
 import { AiFillGithub, AiFillInstagram, AiFillLinkedin } from "react-icons/ai";
-import { DiCssdeck } from "react-icons/di";
+// import { DiCssdeck } from "react-icons/di";
+import NameAnimation from "../NameAnimate/NameAnimate";
 
 import {
   Container,
@@ -35,7 +36,7 @@ const Header = () => (
               marginBottom: "20px",
             }}
           >
-            <DiCssdeck size="4rem" fill="#00DBD8 " /> <Span>Portfolio</Span>
+            <NameAnimation /> <Span>Portfolio</Span>
           </a>
         </Link>
       </motion.div>
