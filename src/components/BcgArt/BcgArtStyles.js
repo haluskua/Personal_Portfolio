@@ -8,9 +8,8 @@ export const BcgArtSection = styled.div`
   bottom: 4%;
   right: 2%;
   @media ${(props) => props.theme.breakpoints.sm} {
-    height: 183px;
-    top: -6%;
-    left: -63%;
+    height: 83px;
+    top: 16%;
   }
 `;
 export const Img = styled.img`
