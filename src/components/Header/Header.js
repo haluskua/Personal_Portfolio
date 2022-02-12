@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import React from "react";
 import { AiFillGithub, AiFillInstagram, AiFillLinkedin } from "react-icons/ai";
 // import { DiCssdeck } from "react-icons/di";
-import NameAnimation from "../NameAnimate/NameAnimate";
+import CircleLogo from "../CircleLogo/CircleLogo";
 
 import {
   Container,
@@ -31,12 +31,13 @@ const Header = () => (
           <a
             style={{
               display: "flex",
+              flexWrap: "wrap",
               alignItems: "center",
               color: "white",
               marginBottom: "20px",
             }}
           >
-            <NameAnimation /> <Span>Portfolio</Span>
+            <CircleLogo /> <Span>Portfolio</Span>
           </a>
         </Link>
       </motion.div>

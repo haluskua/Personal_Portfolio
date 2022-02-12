@@ -12,20 +12,22 @@ const useStyles = makeStyles({
     width: "100%",
     padding: "1px",
     display: "flex",
-    justifyContent: "space-around",
+    justifyContent: "flex-start",
     marginBottom: "0.41rem",
 
     "& span": {
-      background: "linear-gradient(-9.97deg, #c9af89 21.84%, #a786d9 84.67%)",
+      // background: "linear-gradient(-89.97deg, #a82e13 88.84%, #080002 -4.67%)",
       textTransform: "uppercase",
-      border: "1px solid #00dbd8",
-      fontSize: "5px",
+      // border: "0.51px solid #000",
+      letterSpacing: "3.3px",
+      lineHeight: "0",
+      fontSize: "20px",
     },
   },
 });
 
-export default function NameAnimation() {
-  const reactArray = "1111-111 101  1".split("");
+export default function CircleLogo() {
+  const reactArray = "OMZIE'S".split("");
   const classes = useStyles();
 
   return (
@@ -74,43 +76,42 @@ const Wrapper = styled.span`
   flex-wrap: wrap;
   justify-content: space-around;
   margin: 0;
-  width: 100%;
+  width: auto;
   font-weight: 900;
 
   @media ${device.mobileS} and (orientation: portrait) {
-    padding: 9px;
+    padding: 4px 0 0 0;
   }
   @media ${device.mobileS} and (orientation: landscape) {
-    padding: 13px;
+    padding: 1px;
   }
 
   @media ${device.mobileM} and (orientation: portrait) {
-    font-size: 1.43rem;
-    padding: 15px;
-    line-height: 1.72em;
+    padding: 0;
   }
 
   ${SuperQuery().minWidth.lg.and.landscape.css`
     // margin-left: -0.5rem;
-    width: 70%;
     
   `};
 
   @media ${device.tablet} and (orientation: landscape) {
     font-size: 1.33rem;
     font-weight: 900;
-    line-height: 25px;
   }
 
   @media ${device.laptop} and (orientation: landscape) {
-    padding: 10px;
+    padding: 5px 0;
     line-height: 30px;
   }
 
   span {
     display: inline-block;
-    font-size: 24px;
+    padding: 10px 0 0 0;
+    font-size: 26px;
+    width: auto;
     opacity: 0;
+    line-height: 5px;
     animation-name: ${animation};
     animation-duration: 8s;
     animation-fill-mode: forwards;
@@ -120,6 +121,7 @@ const Wrapper = styled.span`
 
   span:nth-child(1) {
     animation-delay: 0.15s;
+    transform: translateY(-11px) skewY(5deg) skewX(6deg) rotateZ(12deg);
   }
   span:nth-child(2) {
     animation-delay: 0.3s;
@@ -129,40 +131,18 @@ const Wrapper = styled.span`
   }
   span:nth-child(4) {
     animation-delay: 0.6s;
+    font-size: 12px;
   }
   span:nth-child(5) {
-    font-size: 0.01px;
     animation-delay: 1.15s;
+    font-size: 12px;
   }
   span:nth-child(6) {
-    animation-delay: 1.3s;
-    color: #5f9ea000;
+    animation-delay: 1.4s;
+    font-size: 12px;
   }
   span:nth-child(7) {
-    animation-delay: 1.45s;
-  }
-  span:nth-child(8) {
-    animation-delay: 2s;
-  }
-  span:nth-child(9) {
-    animation-delay: 2.15s;
-  }
-  span:nth-child(10) {
-    animation-delay: 2.3s;
-  }
-  span:nth-child(11) {
-    animation-delay: 2.45s;
-  }
-  span:nth-child(12) {
-    animation-delay: 2.9s;
-  }
-  span:nth-child(13) {
-    animation-delay: 3.14s;
-  }
-  span:nth-child(14) {
-    animation-delay: 3.29s;
-  }
-  span:nth-child(15) {
-    animation-delay: 3.5s;
+    font-size: 12px;
+    animation-delay: 1.55s;
   }
 `;
