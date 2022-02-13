@@ -109,7 +109,7 @@ const Wrapper = styled.span`
 
   span {
     display: inline-block;
-    font-size: 24px;
+    font-size: 14px;
     opacity: 0;
     animation-name: ${animation};
     animation-duration: 8s;

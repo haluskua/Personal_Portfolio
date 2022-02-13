@@ -2,21 +2,14 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import React from "react";
 import { AiFillGithub, AiFillInstagram, AiFillLinkedin } from "react-icons/ai";
-// import { DiCssdeck } from "react-icons/di";
-import CircleLogo from "../CircleLogo/CircleLogo";
-
-import {
-  Container,
-  Div1,
-  Div2,
-  Div3,
-  NavLink,
-  SocialIcons,
-  Span,
-} from "./HeaderStyles";
+import NavDropDown from "../NavDropDown/index.js";
+import CircleLogo from "../CircleLogo/CircleLogo.js";
+import { Container, Span, Div2, Div3, Div1, SocialIcons } from "./HeaderStyles";
 
 const Header = () => (
   <Container>
+    <NavDropDown />
+
     <Div1>
       <motion.div
         whileHover={{
@@ -42,7 +35,7 @@ const Header = () => (
         </Link>
       </motion.div>
     </Div1>
-    <Div2>
+    {/* <Div2>
       <motion.div
         whileHover={{
           position: "relative",
@@ -82,7 +75,7 @@ const Header = () => (
           <NavLink> About</NavLink>
         </Link>
       </motion.div>
-    </Div2>
+    </Div2> */}
     <Div3>
       <SocialIcons href="https://github.com">
         <AiFillGithub size="3rem" />
