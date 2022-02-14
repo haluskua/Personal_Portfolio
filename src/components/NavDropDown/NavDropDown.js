@@ -1,5 +1,10 @@
 import styled from "styled-components";
 
+export const Hamburger = styled.div`
+  background-color: "green";
+  padding: 2rem;
+`;
+
 export const Div1 = styled.div`
   grid-area: 1 / 1 / 2 / 2;
   display: flex;
@@ -40,9 +45,10 @@ export const NavLink = styled.a`
   font-size: 2rem;
   line-height: 32px;
   transition: 0.4s ease;
-  color: linear-gradient(89.97deg, #00dbd8 1.84%, #91cbff 54.67%);
+  color: black;
+  width: 100%;
   &:hover {
-    color: #ffc107;
+    color: purple;
     opacity: 1;
     cursor: pointer;
   }

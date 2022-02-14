@@ -8,8 +8,6 @@ import { Container, Span, Div2, Div3, Div1, SocialIcons } from "./HeaderStyles";
 
 const Header = () => (
   <Container>
-    <NavDropDown />
-
     <Div1>
       <motion.div
         whileHover={{
@@ -27,7 +25,6 @@ const Header = () => (
               flexWrap: "wrap",
               alignItems: "center",
               color: "white",
-              marginBottom: "20px",
             }}
           >
             <CircleLogo /> <Span>Portfolio</Span>
@@ -48,7 +45,7 @@ const Header = () => (
         <Link href="#projects">
           <NavLink> Projects</NavLink>
         </Link>
-      </motion.div>
+        </motion.div>
       <motion.div
         whileHover={{
           position: "relative",
@@ -58,12 +55,12 @@ const Header = () => (
           },
         }}
       >
-        <Link href="#tech">
+      <Link href="#tech">
           <NavLink> Technologies</NavLink>
         </Link>
       </motion.div>
       <motion.div
-        whileHover={{
+      whileHover={{
           position: "relative",
           scale: 1.1,
           transition: {
@@ -77,16 +74,47 @@ const Header = () => (
       </motion.div>
     </Div2> */}
     <Div3>
-      <SocialIcons href="https://github.com">
-        <AiFillGithub size="3rem" />
-      </SocialIcons>
-      <SocialIcons href="https://linkedin.com">
-        <AiFillLinkedin size="3rem" />
-      </SocialIcons>
-      <SocialIcons href="https://instagram.com">
-        <AiFillInstagram size="3rem" />
-      </SocialIcons>
+      <motion.div
+        whileHover={{
+          position: "relative",
+          scale: 1.1,
+          transition: {
+            duration: 0.2,
+          },
+        }}
+      >
+        <SocialIcons href="https://github.com">
+          <AiFillGithub size="3rem" />
+        </SocialIcons>
+      </motion.div>
+      <motion.div
+        whileHover={{
+          position: "relative",
+          scale: 1.1,
+          transition: {
+            duration: 0.2,
+          },
+        }}
+      >
+        <SocialIcons href="https://linkedin.com">
+          <AiFillLinkedin size="3rem" />
+        </SocialIcons>
+      </motion.div>
+      <motion.div
+        whileHover={{
+          position: "relative",
+          scale: 1.1,
+          transition: {
+            duration: 0.2,
+          },
+        }}
+      >
+        <SocialIcons href="https://instagram.com">
+          <AiFillInstagram size="3rem" />
+        </SocialIcons>
+      </motion.div>
     </Div3>
+    <NavDropDown />
   </Container>
 );
 

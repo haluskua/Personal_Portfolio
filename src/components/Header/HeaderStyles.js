@@ -2,26 +2,21 @@ import { IoIosArrowDropdown } from "react-icons/io";
 import styled from "styled-components";
 
 export const Container = styled.div`
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: 1fr;
-  grid-column-gap: 2rem;
-  padding: 1rem;
-  padding-top: 1rem 2rem;
-
-  @media ${(props) => props.theme.breakpoints.sm} {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(2, 60px);
-    grid-column-gap: 0.5rem;
-    grid-row-gap: 0.5rem;
-  }
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  top: 0px;
+  padding: 0 2rem;
+  width: 100%;
+  z-index: 99;
+  margin: 0 auto;
+  background: #2d1e4dd9;
 `;
 export const Div1 = styled.div`
   grid-area: 1 / 1 / 2 / 2;
   display: flex;
   flex-direction: row;
-  align-content: center;
+  align-items: center;
   justify-content: space-around;
   @media ${(props) => props.theme.breakpoints.sm} {
     grid-area: 1 / 1 / 2 / 3;
@@ -41,6 +36,7 @@ export const Div2 = styled.div`
   grid-area: 1 / 2 / 2 / 4;
   display: flex;
   justify-content: space-around;
+  display: none;
   @media ${(props) => props.theme.breakpoints.sm} {
     grid-area: 2 / 1/ 2 / 6;
     align-items: center;
@@ -49,15 +45,17 @@ export const Div2 = styled.div`
   li {
     width: 100%;
   }
+  @media ${(props) => props.theme.breakpoints.m} {
+    display: none;
+  }
 `;
 export const Div3 = styled.div`
-  grid-area: 1 / 5 / 2 / 6;
   display: flex;
-  justify-content: space-around;
-  align-items: center;
   @media ${(props) => props.theme.breakpoints.sm} {
-    align-items: center;
-    grid-area: 1 / 4 / 2 / 6;
+    display: none !important;
+  }
+  @media ${(props) => props.theme.breakpoints.m} {
+    width: 20%;
   }
 `;
 
@@ -131,8 +129,11 @@ export const SocialIcons = styled.a`
   border-radius: 50px;
   padding: 8px;
   &:hover {
-    background-color: #212d45;
+    /* background-color: #212d45; */
     transform: scale(1.2);
     cursor: pointer;
+  }
+  @media ${(props) => props.theme.breakpoints.m} {
+    flex-direction: column;
   }
 `;

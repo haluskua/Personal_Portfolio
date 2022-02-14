@@ -40,6 +40,9 @@ export default function BasicMenu() {
             <MenuIcon
               style={{
                 fontSize: "2.7rem",
+                display: "flex",
+                alignItems: "center",
+                height: "100%",
               }}
             />
           </motion.div>
@@ -55,7 +58,7 @@ export default function BasicMenu() {
           "aria-labelledby": "basic-button",
         }}
       >
-        <MenuItem onClick={handleClose} style={{ backgroundColor: "#c0b3df" }}>
+        <MenuItem onClick={handleClose} style={{ backgroundColor: "none" }}>
           <motion.div
             whileHover={{
               position: "relative",
@@ -65,9 +68,7 @@ export default function BasicMenu() {
               },
             }}
           >
-            <Link href="#projects">
-              <NavLink> Projects</NavLink>
-            </Link>
+            <NavLink href="#projects"> Projects</NavLink>
           </motion.div>
         </MenuItem>
         <MenuItem onClick={handleClose}>
@@ -80,9 +81,7 @@ export default function BasicMenu() {
               },
             }}
           >
-            <Link href="#tech">
-              <NavLink> Technologies</NavLink>
-            </Link>
+            <NavLink href="#tech"> Technologies</NavLink>
           </motion.div>
         </MenuItem>
         <MenuItem onClick={handleClose}>
@@ -95,9 +94,7 @@ export default function BasicMenu() {
               },
             }}
           >
-            <Link href="#about">
-              <NavLink> About</NavLink>
-            </Link>
+            <NavLink href="#about"> About</NavLink>
           </motion.div>
         </MenuItem>
       </Menu>

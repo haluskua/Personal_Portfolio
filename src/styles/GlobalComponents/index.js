@@ -6,6 +6,7 @@ export const Section = styled.section`
   padding: ${(props) => (props.nopadding ? "0" : "32px 48px 0")};
   margin: 0 auto;
   max-width: 1040px;
+  position: relative;
   box-sizing: content-box;
   position: relative;
   overflow: hidden;
