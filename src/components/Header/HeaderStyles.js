@@ -7,10 +7,32 @@ export const Container = styled.div`
   position: fixed;
   top: 0px;
   padding: 0 2rem;
-  width: 100%;
+  width: 1280px;
   z-index: 99;
   margin: 0 auto;
   background: #2d1e4dd9;
+  align-items: center;
+  align-self: center;
+  @media ${(props) => props.theme.breakpoints.xl} {
+    grid-area: 1 / 1 / 2 / 3;
+    max-width: 1024px;
+  }
+  @media ${(props) => props.theme.breakpoints.lg} {
+    max-width: 1220px;
+    display: flex;
+    align-self: center;
+    padding: 0 41rem 0 1rem;
+  }
+  @media ${(props) => props.theme.breakpoints.md} {
+    grid-area: 1 / 1 / 2 / 3;
+    padding: 0 17rem 0 5rem;
+    width: 900px;
+  }
+
+  @media ${(props) => props.theme.breakpoints.sm} {
+    grid-area: 1 / 1 / 2 / 3;
+    padding: 0 53rem 0 1rem;
+  }
 `;
 export const Div1 = styled.div`
   grid-area: 1 / 1 / 2 / 2;

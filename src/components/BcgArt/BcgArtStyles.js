@@ -19,9 +19,12 @@ export const Img = styled.img`
   overflow: hidden;
   opacity: 0.35;
   @media ${(props) => props.theme.breakpoints.sm} {
-    height: 280px;
+    height: 140px;
   }
   @media ${(props) => props.theme.breakpoints.md} {
+    height: 140px;
+  }
+  @media ${(props) => props.theme.breakpoints.lg} {
     height: 200px;
   }
 `;

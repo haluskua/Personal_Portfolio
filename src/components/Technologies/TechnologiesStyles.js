@@ -68,6 +68,10 @@ export const ListTitle = styled.h4`
   letter-spacing: 0.02em;
   color: #d7dfef;
   margin-bottom: 8px;
+  @media ${(props) => props.theme.breakpoints.xl} {
+  }
+  @media ${(props) => props.theme.breakpoints.lg} {
+  }
   @media ${(props) => props.theme.breakpoints.md} {
     font-size: 24px;
     line-height: 28px;
